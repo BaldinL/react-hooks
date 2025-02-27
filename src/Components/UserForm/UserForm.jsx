@@ -13,7 +13,7 @@ function UserForm() {
             [e.target.name]: e.target.value
         })
     }
-    function submitHandler() {
+    function submitHandler(e) {
         localStorage.setItem("data", JSON.stringify(userData))
     }
     return (

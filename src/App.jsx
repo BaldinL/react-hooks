@@ -1,4 +1,3 @@
-// import { useState } from "react"
 import UserForm from "./Components/UserForm/UserForm"
 import Result from "./Components/Result/Result"
 

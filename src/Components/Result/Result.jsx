@@ -3,8 +3,17 @@ import { useState } from "react"
 function Result() {
     function getUserData() {
         const userData = localStorage.getItem("data")
-        const res = JSON.parse(userData)
-        return res
+        if (userData !== null) {
+            const res = JSON.parse(userData)
+            return res
+        } else {
+            return {
+                name: "",
+                surname: "",
+                code: "",
+                email: ""
+            }
+        }
     }
     const [result, setResult] = useState(getUserData)
     return (
